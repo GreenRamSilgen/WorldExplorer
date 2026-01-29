@@ -21,6 +21,7 @@ class RestOfWorld : Codable {
         let id = UUID().uuidString
         var name : CountryNames
         var region : String
+        var flag : String
         var capital : [String]?
         var flags : Flags
         var coatOfArms : CoatOfArms
@@ -28,6 +29,7 @@ class RestOfWorld : Codable {
         enum CodingKeys: CodingKey {
             case name
             case region
+            case flag
             case capital
             case flags
             case coatOfArms

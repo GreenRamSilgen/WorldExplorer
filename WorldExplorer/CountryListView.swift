@@ -33,7 +33,7 @@ struct CountryListView: View {
                     NavigationLink {
                         CountryDetailView(country: country)
                     } label: {
-                        Text(country.name.common)
+                        Text("\(country.flag) \(country.name.common)")
                             .font(.title)
                     }
 

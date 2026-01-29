@@ -82,11 +82,12 @@ struct CountryDetailView: View {
             Spacer()
         }
         .padding()
+        .font(.title2)
     }
 }
 
 #Preview {
     NavigationStack{
-        CountryDetailView(country: .init(name: .init(common: "Test", official: "Offical Test THAT IS TOO LONG TO FIT"), region: "Asia", capital: ["Cepital"], flags: .init(png: "temp.png", svg: "temp.svg"), coatOfArms: .init(png: "coat.png", svg: "coat.svg")))
+        CountryDetailView(country: .init(name: .init(common: "Test", official: "Offical Test THAT IS TOO LONG TO FIT"), region: "Asia", flag: "🇳🇵", capital: ["Cepital"], flags: .init(png: "temp.png", svg: "temp.svg"), coatOfArms: .init(png: "coat.png", svg: "coat.svg")))
     }
 }
